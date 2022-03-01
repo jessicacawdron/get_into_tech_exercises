@@ -40,7 +40,7 @@ def draw(uservalue, computervalue):
         print("DRAW")
 
 
-def win(*,uservalue, computervalue):
+def win(*, uservalue, computervalue):
     if uservalue == 0 and computervalue == 2:
         print("Rock beats Scissors - YOU WIN")
         return 1
@@ -54,7 +54,7 @@ def win(*,uservalue, computervalue):
         return 0
 
 
-def lose(*,uservalue, computervalue):
+def lose(*, uservalue, computervalue):
     if uservalue == 2 and computervalue == 0:
         print("Rock beats Scissors - YOU LOSE")
         return 1
@@ -84,7 +84,6 @@ def result(score1, score2):
               "It's a draw\n"
               "Go for the win next time!\n"
               "----------------------")
-
 
 
 play = input("Would you like to play rock paper, scissors? Y or N: ")
@@ -127,4 +126,3 @@ while play != "N":
 
     result(user_points, comp_points)
     play = input("Would you like to play again? Y or N :")
-
